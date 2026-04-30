@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVC Task List</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; }
+        .task { padding: 10px; border-bottom: 1px solid #ccc; }
+        .completed { text-decoration: line-through; color: gray; }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>Task List (The View)</h1>
+    
+    <div>
+        <% tasks.forEach(task => { %>
+            <div class="task <%= task.completed ? 'completed' : '' %>">
+                <strong>Task #<%= task.id %>:</strong> <%= task.title %>
+            </div>
+        <% }) %>
+    </div>
+
+    <br>
+    <form action="/tasks" method="POST">
+        <input type="text" name="title" placeholder="New Task" required>
+        <button type="submit">Add Task</button>
+    </form>
+</body>
+</html>
