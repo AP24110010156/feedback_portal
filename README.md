@@ -1,3 +1,9 @@
+# feedback_portal
+
+The Customer Feedback & Feature Request Portal is a MERN-based web app that centralizes user feedback and feature suggestions. Users can submit ideas, browse requests, and upvote features, while admins review and manage them, helping businesses prioritize improvements efficiently.
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
